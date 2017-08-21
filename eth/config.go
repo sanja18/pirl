@@ -39,7 +39,7 @@ var DefaultConfig = Config{
 	EthashCachesOnDisk:   3,
 	EthashDatasetsInMem:  1,
 	EthashDatasetsOnDisk: 2,
-	NetworkId:            1,
+	NetworkId:            3125659152,
 	LightPeers:           20,
 	DatabaseCache:        128,
 	GasPrice:             big.NewInt(18 * params.Shannon),
@@ -59,9 +59,9 @@ func init() {
 		}
 	}
 	if runtime.GOOS == "windows" {
-		DefaultConfig.EthashDatasetDir = filepath.Join(home, "AppData", "Ethash")
+		DefaultConfig.EthashDatasetDir = filepath.Join(home, "AppData", "Pirl")
 	} else {
-		DefaultConfig.EthashDatasetDir = filepath.Join(home, ".ethash")
+		DefaultConfig.EthashDatasetDir = filepath.Join(home, ".pirl")
 	}
 }
 
