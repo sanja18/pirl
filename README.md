@@ -1,3 +1,7 @@
+## Pirl
+Time between block: same as eth
+block reward : 8
+
 ## Go Ethereum
 
 Official golang implementation of the Ethereum protocol.
