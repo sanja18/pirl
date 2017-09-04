@@ -40,7 +40,7 @@ import (
 )
 
 const (
-	clientIdentifier = "geth" // Client identifier to advertise over the network
+	clientIdentifier = "pirl" // Client identifier to advertise over the network
 )
 
 var (
