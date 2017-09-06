@@ -26,12 +26,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/pirl/pirl/core"
+	"github.com/pirl/pirl/core/types"
+	"github.com/pirl/pirl/internal/debug"
+	"github.com/pirl/pirl/log"
+	"github.com/pirl/pirl/node"
+	"github.com/pirl/pirl/rlp"
 )
 
 const (

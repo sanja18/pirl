@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/common/math"
 )
 
 // packBytesSlice packs the given bytes as [L, V] as the canonical representation

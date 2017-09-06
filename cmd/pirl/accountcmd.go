@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/pirl/pirl/accounts"
+	"github.com/pirl/pirl/accounts/keystore"
+	"github.com/pirl/pirl/cmd/utils"
+	"github.com/pirl/pirl/console"
+	"github.com/pirl/pirl/crypto"
+	"github.com/pirl/pirl/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

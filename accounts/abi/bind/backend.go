@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/pirl/pirl"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/core/types"
 )
 
 var (

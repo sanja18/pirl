@@ -7,10 +7,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/pirl/pirl/accounts/abi"
+	"github.com/pirl/pirl/accounts/abi/bind"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/core/types"
 )
 
 // ChequebookABI is the input ABI used to generate the binding from.

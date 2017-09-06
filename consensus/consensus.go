@@ -18,11 +18,11 @@
 package consensus
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/core/state"
+	"github.com/pirl/pirl/core/types"
+	"github.com/pirl/pirl/params"
+	"github.com/pirl/pirl/rpc"
 )
 
 // ChainReader defines a small collection of methods needed to access the local

@@ -25,9 +25,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/common/hexutil"
+	"github.com/pirl/pirl/core/types"
 )
 
 // Tests that verification caches can be correctly generated.
