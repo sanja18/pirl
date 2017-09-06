@@ -29,7 +29,7 @@ import (
 	"github.com/pirl/pirl/accounts"
 	"github.com/pirl/pirl/common"
 	"github.com/pirl/pirl/core/types"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/pirl/pirl/log"
 	"github.com/karalabe/hid"
 )
 

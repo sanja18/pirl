@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/pirl/pirl/core/types"
+	"github.com/pirl/pirl/ethdb"
 )
 
 // Runs multiple tests with randomized parameters.

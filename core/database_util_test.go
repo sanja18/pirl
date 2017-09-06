@@ -23,13 +23,13 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/sha3"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/core/types"
+	"github.com/pirl/pirl/crypto"
+	"github.com/pirl/pirl/crypto/sha3"
+	"github.com/pirl/pirl/ethdb"
+	"github.com/pirl/pirl/params"
+	"github.com/pirl/pirl/rlp"
 )
 
 // Tests block header storage and retrieval operations.

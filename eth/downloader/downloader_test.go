@@ -25,15 +25,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/core"
+	"github.com/pirl/pirl/core/state"
+	"github.com/pirl/pirl/core/types"
+	"github.com/pirl/pirl/crypto"
+	"github.com/pirl/pirl/ethdb"
+	"github.com/pirl/pirl/event"
+	"github.com/pirl/pirl/params"
+	"github.com/pirl/pirl/trie"
 )
 
 var (

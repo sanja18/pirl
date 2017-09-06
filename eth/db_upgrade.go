@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/core"
+	"github.com/pirl/pirl/ethdb"
+	"github.com/pirl/pirl/log"
+	"github.com/pirl/pirl/rlp"
 )
 
 var deduplicateData = []byte("dbUpgrade_20170714deduplicateData")

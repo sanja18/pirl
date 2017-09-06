@@ -24,9 +24,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/log"
+	"github.com/pirl/pirl/swarm/storage"
 )
 
 func testApi(t *testing.T, f func(*Api)) {

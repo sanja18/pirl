@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/pirl/pirl/log"
+	"github.com/pirl/pirl/swarm/storage"
 )
 
 // Handler for storage/retrieval related protocol requests

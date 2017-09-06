@@ -24,12 +24,12 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/services/swap"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/contracts/ens"
+	"github.com/pirl/pirl/crypto"
+	"github.com/pirl/pirl/swarm/network"
+	"github.com/pirl/pirl/swarm/services/swap"
+	"github.com/pirl/pirl/swarm/storage"
 )
 
 const (
