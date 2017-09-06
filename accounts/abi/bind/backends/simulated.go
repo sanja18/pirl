@@ -23,17 +23,17 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/pirl/pirl"
+	"github.com/pirl/pirl/accounts/abi/bind"
+	"github.com/pirl/pirl/common"
+	"github.com/pirl/pirl/common/math"
+	"github.com/pirl/pirl/consensus/ethash"
+	"github.com/pirl/pirl/core"
+	"github.com/pirl/pirl/core/state"
+	"github.com/pirl/pirl/core/types"
+	"github.com/pirl/pirl/core/vm"
+	"github.com/pirl/pirl/ethdb"
+	"github.com/pirl/pirl/params"
 )
 
 // This nil assignment ensures compile time that SimulatedBackend implements bind.ContractBackend.
