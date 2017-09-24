@@ -1,13 +1,13 @@
 FROM alpine:3.6
 
-ADD . /go-ethereum
+ADD . /pirl
 RUN \
   apk add --no-cache git go make gcc musl-dev linux-headers && \
-  (cd go-ethereum && make geth)                             && \
-  cp go-ethereum/build/bin/geth /usr/local/bin/             && \
+  (cd pirl && make pirl)                             && \
+  cp pirl/build/bin/pirl /usr/local/bin/             && \
   apk del git go make gcc musl-dev linux-headers            && \
-  rm -rf /go-ethereum
+  rm -rf /pirl
 
-EXPOSE 8545 30303 30303/udp
+EXPOSE 6588 30303 30303/udp
 
-ENTRYPOINT ["geth"]
+ENTRYPOINT ["pirl"]
