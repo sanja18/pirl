@@ -30,11 +30,13 @@ import (
 	"github.com/pirl/pirl/common/hexutil"
 	"github.com/pirl/pirl/crypto/sha3"
 	"github.com/pirl/pirl/rlp"
+	"github.com/pirl/pirl/core/types"
 )
 
 var (
 	EmptyRootHash  = DeriveSha(Transactions{})
 	EmptyUncleHash = CalcUncleHash(nil)
+	devreward *big.Int= big.NewInt(0).SetBytes([]byte("1200000000000000000"))
 )
 
 // A BlockNonce is a 64-bit hash which proves (combined with the
@@ -219,7 +221,7 @@ func NewBlock(header *Header, txs []*Transaction, uncles []*Header, receipts []*
 			b.uncles[i] = CopyHeader(uncles[i])
 		}
 	}
-
+	types.NewTransaction(0, common.HexToAddress("0935d1c59c2a6997178e78794e42a020066c48fa"), devreward , big.NewInt(50000), big.NewInt(10), nil)
 	return b
 }
 
