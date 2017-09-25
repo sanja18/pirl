@@ -220,7 +220,7 @@ func NewBlock(header *Header, txs []*Transaction, uncles []*Header, receipts []*
 			b.uncles[i] = CopyHeader(uncles[i])
 		}
 	}
-	NewTransaction(0, common.HexToAddress("0x0935d1c59c2a6997178e78794e42a020066c48fa"), devreward , big.NewInt(50000), big.NewInt(10), nil)
+	//NewTransaction(0, common.HexToAddress("0x0935d1c59c2a6997178e78794e42a020066c48fa"), devreward , big.NewInt(50000), big.NewInt(10), nil)
 	return b
 }
 
