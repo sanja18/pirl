@@ -30,7 +30,6 @@ import (
 	"github.com/pirl/pirl/common/hexutil"
 	"github.com/pirl/pirl/crypto/sha3"
 	"github.com/pirl/pirl/rlp"
-	"github.com/pirl/pirl/core/types"
 )
 
 var (
