@@ -20,4 +20,4 @@ import (
 	"math/big"
 )
 
-var BlockReward = big.NewInt(0).SetBytes([]byte("12000000000000000000"))
+var BlockReward = big.NewInt(0).SetBytes([]byte("12"))
