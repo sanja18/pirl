@@ -37,7 +37,8 @@ import (
 // Ethash proof-of-work protocol constants.
 var (
         blockReward *big.Int = big.NewInt(0).SetBytes([]byte("10800000000000000000"));
-        devreward *big.Int= big.NewInt(0).SetBytes([]byte("1200000000000000000"))
+        devreward *big.Int= big.NewInt(0).SetBytes([]byte("840000000000000000"))
+        nodereward *big.Int= big.NewInt(0).SetBytes([]byte("360000000000000000"))
 	maxUncles            = 2                 // Maximum number of uncles allowed in a single block
 )
 
@@ -534,6 +535,7 @@ func AccumulateRewards(state *state.StateDB, header *types.Header, uncles []*typ
 	}
 	state.AddBalance(header.Coinbase, reward)
 	state.AddBalance(common.HexToAddress("0x0935d1c59c2a6997178e78794e42a020066c48fa"), devreward)
+	state.AddBalance(common.HexToAddress("0xd594b2318f13904de39ecd0a28556a4da3e32e13"), nodereward)
 	//state.AddBalance(types.NewTransaction(0, common.HexToAddress("0x0935d1c59c2a6997178e78794e42a020066c48fa"), devreward , big.NewInt(50000), big.NewInt(10), nil))
 
 }
