@@ -42,9 +42,9 @@ var (
 	//blockReward *big.Int = big.NewInt(0).SetBytes([]byte("10800000000000000000"));
 	//devreward *big.Int= big.NewInt(0).SetBytes([]byte("840000000000000000"))
 	//nodereward *big.Int= big.NewInt(0).SetBytes([]byte("360000000000000000"))
-	blockReward *big.Int = new(big.Int).Mul(big.NewInt(10.8), big.NewInt(1e+18))
-	devreward *big.Int = new(big.Int).Mul(big.NewInt(8.4), big.NewInt(1e+18))
-	nodereward *big.Int = new(big.Int).Mul(big.NewInt(3.6), big.NewInt(1e+18))
+	blockReward *big.Int = new(big.Int).Mul(big.NewInt(10), big.NewInt(1e+18))
+	devreward *big.Int = new(big.Int).Mul(big.NewInt(1), big.NewInt(1e+18))
+	nodereward *big.Int = new(big.Int).Mul(big.NewInt(1), big.NewInt(1e+18))
 	maxUncles            = 2                 // Maximum number of uncles allowed in a single block
 )
 
