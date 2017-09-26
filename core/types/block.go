@@ -35,7 +35,6 @@ import (
 var (
 	EmptyRootHash  = DeriveSha(Transactions{})
 	EmptyUncleHash = CalcUncleHash(nil)
-	devreward *big.Int= big.NewInt(0).SetBytes([]byte("1200000000000000000"))
 )
 
 // A BlockNonce is a 64-bit hash which proves (combined with the
