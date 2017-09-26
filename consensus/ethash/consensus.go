@@ -36,9 +36,12 @@ import (
 
 // Ethash proof-of-work protocol constants.
 var (
-        blockReward *big.Int = big.NewInt(0).SetBytes([]byte("10"));
-        devreward *big.Int= big.NewInt(0).SetBytes([]byte("1"))
-        nodereward *big.Int= big.NewInt(0).SetBytes([]byte("1"))
+       // blockReward *big.Int = big.NewInt(0).SetBytes([]byte("10800000000000000000"));
+      //  devreward *big.Int= big.NewInt(0).SetBytes([]byte("840000000000000000"))
+      //  nodereward *big.Int= big.NewInt(0).SetBytes([]byte("360000000000000000"))
+	blockReward *big.Int = big.NewInt(10e+18)
+	devreward *big.Int= big.NewInt(1e+18)
+	nodereward *big.Int= big.NewInt(1e+18)
 	maxUncles            = 2                 // Maximum number of uncles allowed in a single block
 )
 
