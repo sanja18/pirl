@@ -3,10 +3,37 @@ Time between block: 13 sec
 total block reward : 12
 Miner reward : 10
 Masternode / dev : 2
+Network ID : 3125659152
 rpc port : 6588
 
 ## Quickstart docker:
-` `
+```
+docker run -itd --name pirl  -p 6588:6588 -p 30303:30303 -p 30303:30303/udp pirl/pirl-node
+
+```
+You can also find compiled bin in release.
+
+## Run bin in Linux:
+  * /usr/bin/pirl --rpc --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcport 6588  --rpcapi "eth,net,web3"
+
+## Open Firewall Port:
+
+* 6588
+* 30303 ( TCP / UDP )
+
+## Systemd start:
+```
+[Unit]
+Description=Pirl
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pirl --rpc --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcport 6588  --rpcapi "eth,net,web3"
+[Install]
+WantedBy=default.target
+
+```
+
 
 
 ## Go Pirl
@@ -15,11 +42,10 @@ Official golang implementation of the Pirl protocol.
 
 
 Automated builds are available for stable releases and the unstable master branch.
-Binary archives are published at https://release.pirl.io
+Binary archives are published at http://release.pirl.io
 
 ## Building the source
 
-For prerequisites and detailed build instructions please read the
 Once the dependencies are installed, run
 
     `make pirl`
@@ -85,9 +111,9 @@ docker run -itd --name pirl  -p 6588:6588 -p 30303:30303 -p 30303:30303/udp pirl
 ```
 
 Create an address:
-  * `- docker exec -it pirl /bin/sh`
-  * `-  pirl attach`
-  * `-  personal.newAccount("passphrase")`
+  * `docker exec -it pirl /bin/sh`
+  * `pirl attach`
+  * `personal.newAccount("passphrase")`
   * `!!!!!!!!!! retrieve content and backup wallet !!!!!!!!!!!!!!!!!!!!`
   * `exit`
   * `cd /root/.pirl/keystore/`
@@ -136,14 +162,8 @@ doing so! Hackers on the internet are actively trying to subvert Ethereum nodes 
 Further, all browser tabs can access locally running webservers, so malicious webpages could try to
 subvert locally available APIs!**
 
-### Operating a private network
 
-Maintaining your own private network is more involved as a lot of configurations taken for granted in
-the official networks need to be manually set up.
-
-
-
-#### Running a private miner directly on node #####
+#### Running a private miner directly on node
 
 Mac : https://github.com/ethereum-mining/ethminer/releases/download/v0.12.0/ethminer-0.12.0-Darwin.tar.gz
 Windows :
