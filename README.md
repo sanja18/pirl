@@ -1,10 +1,16 @@
 ## Pirl
   * Time between block: 13 sec
-  * total block reward : 12
+  * total block reward : 12 PIRL
   * Miner reward : 10 PIRL / block
   * Masternode / dev : 2  PIRL / block
   * Network ID : 3125659152
   * rpc port : 6588
+
+## Open Firewall Port:
+
+* 6588
+* 30303 ( TCP / UDP )
+
 
 ## Quickstart docker:
 ```
@@ -18,10 +24,6 @@ You can also find compiled bin in release.
   * /usr/bin/pirl --rpc --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcport 6588  --rpcapi "eth,net,web3"
 ```
 
-## Open Firewall Port:
-
-* 6588
-* 30303 ( TCP / UDP )
 
 ## Systemd start:
 ```
