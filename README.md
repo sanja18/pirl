@@ -5,6 +5,8 @@
   * Masternode / dev : 2  PIRL / block
   * Network ID : 3125659152
   * rpc port : 6588
+  * Explorer: https://explorer.pirl.io
+
 
 ## Open Firewall Port:
 
