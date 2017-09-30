@@ -16,7 +16,7 @@
 ```
 docker run -itd --name pirl  -p 6588:6588 -p 30303:30303 -p 30303:30303/udp pirl/pirl-node
 ```
-  * to enter container:
+  * to enter the container:
 ```
   docker exec -it pirl /bin/sh
 ```
