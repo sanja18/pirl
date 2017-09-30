@@ -37,6 +37,7 @@ Description=Pirl
 
 [Service]
 Type=simple
+Restart=always
 ExecStart=/usr/bin/pirl --rpc --rpcaddr 127.0.0.1 --rpccorsdomain * --rpcport 6588  --rpcapi "eth,net,web3"
 [Install]
 WantedBy=default.target
