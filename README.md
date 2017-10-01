@@ -13,7 +13,7 @@
 * 6588
 * 30303 ( TCP / UDP )
 
-## Quic command:
+## Quick command:
 
 List all accounts: personal.listAccounts
 
