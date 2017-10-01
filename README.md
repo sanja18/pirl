@@ -13,6 +13,19 @@
 * 6588
 * 30303 ( TCP / UDP )
 
+## Quic command:
+
+List all accounts: personal.listAccounts
+
+Unlock wallet: personal.unlockAccount(youraddress, passwd, duration)
+
+Number of synced blocks (compare with some pool or explorer if you are fully synced): eth.blockNumber
+
+Info about connected peers: admin.peers
+
+Balance: web3.fromWei(eth.getBalance("youraddress"), "ether") or or web3.fromWei(eth.getBalance(eth.coinbase), "ether")
+
+Send transaction: eth.sendTransaction({from: "address", to: "address", value: web3.toWei(1, "ether")})
 
 ## Quickstart docker:
 ```
