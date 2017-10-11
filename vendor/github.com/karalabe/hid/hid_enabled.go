@@ -56,6 +56,7 @@ func init() {
 // Supported returns whether this platform is supported by the HID library or not.
 // The goal of this method is to allow programatically handling platforms that do
 // not support USB HID and not having to fall back to build constraints.
+var enumerateLock sync.Mutex
 func Supported() bool {
 	return true
 }
@@ -66,6 +67,8 @@ func Supported() bool {
 //  - If the product id is set to 0 then any product matches.
 //  - If the vendor and product id are both 0, all HID devices are returned.
 func Enumerate(vendorID uint16, productID uint16) []DeviceInfo {
+	enumerateLock.Lock()
+	defer enumerateLock.Unlock()
 	// Gather all device infos and ensure they are freed before returning
 	head := C.hid_enumerate(C.ushort(vendorID), C.ushort(productID))
 	if head == nil {
