@@ -32,7 +32,7 @@ var (
 var (
 	// MainnetChainConfig is the chain parameters to run a node on the main network.
 	MainnetChainConfig = &ChainConfig{
-		ChainId:         big.NewInt(3125659152),
+		ChainId:         big.NewInt(1426),
 		HomesteadBlock:  big.NewInt(0),
 		DAOForkBlock:    nil,
 		DAOForkSupport:  true,
@@ -47,7 +47,7 @@ var (
 
 	// TestnetChainConfig contains the chain parameters to run a node on the Ropsten test network.
 	TestnetChainConfig = &ChainConfig{
-		ChainId:         big.NewInt(3),
+		ChainId:         big.NewInt(1439),
 		HomesteadBlock:  big.NewInt(0),
 		DAOForkBlock:    nil,
 		DAOForkSupport:  true,
@@ -62,7 +62,7 @@ var (
 
 	// RinkebyChainConfig contains the chain parameters to run a node on the Rinkeby test network.
 	RinkebyChainConfig = &ChainConfig{
-		ChainId:         big.NewInt(4),
+		ChainId:         big.NewInt(1438),
 		HomesteadBlock:  big.NewInt(1),
 		DAOForkBlock:    nil,
 		DAOForkSupport:  true,
