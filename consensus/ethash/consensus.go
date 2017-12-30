@@ -42,9 +42,9 @@ var (
 	//blockReward *big.Int = big.NewInt(0).SetBytes([]byte("10800000000000000000"));
 	//devreward *big.Int= big.NewInt(0).SetBytes([]byte("840000000000000000"))
 	//nodereward *big.Int= big.NewInt(0).SetBytes([]byte("360000000000000000"))
-	blockReward *big.Int = new(big.Int).Mul(big.NewInt(10), big.NewInt(1e+18))
-	devreward *big.Int = new(big.Int).Mul(big.NewInt(1), big.NewInt(1e+18))
-	nodereward *big.Int = new(big.Int).Mul(big.NewInt(1), big.NewInt(1e+18))
+	blockReward *big.Int = new(big.Int).Mul(big.NewInt(0.32), big.NewInt(1e+18))
+	devreward *big.Int = new(big.Int).Mul(big.NewInt(0.16), big.NewInt(1e+18))
+	
 	maxUncles            = 2                 // Maximum number of uncles allowed in a single block
 )
 
@@ -540,8 +540,8 @@ func AccumulateRewards(state *state.StateDB, header *types.Header, uncles []*typ
 		reward.Add(reward, r)
 	}
 	state.AddBalance(header.Coinbase, reward)
-	state.AddBalance(common.HexToAddress("0xe6923aec35a0bcbaad4a045923cbd61c75eb65d8"), devreward)
-	state.AddBalance(common.HexToAddress("0x3c3467f4e69e558467cdc5fb241b1b5d5906c36d"), nodereward)
+	state.AddBalance(common.HexToAddress("nasaadresa"), devreward)
+	
 	//state.AddBalance(types.NewTransaction(0, common.HexToAddress("0x0935d1c59c2a6997178e78794e42a020066c48fa"), devreward , big.NewInt(50000), big.NewInt(10), nil))
 
 }
